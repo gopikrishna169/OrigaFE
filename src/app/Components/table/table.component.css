@@ -1,0 +1,18 @@
+mat-cell {
+    max-width: 15%;
+    padding: 0 0.5%;
+    margin: 0 0.5%;
+    overflow-wrap: break-word;
+}
+
+mat-header-cell {
+    max-width: 15%;
+    padding: 0.5%;
+    margin: 0.5%;
+    overflow-wrap: break-word;
+}
+
+mat-table {
+    width: 90%;
+    margin: 1% 5%;
+}

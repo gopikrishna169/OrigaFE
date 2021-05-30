@@ -1,0 +1,34 @@
+<div>
+  <mat-table [dataSource]="userData">
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="username">
+      <mat-header-cell *matHeaderCellDef> UserName </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.username}} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="city">
+      <mat-header-cell *matHeaderCellDef> City </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.address.city}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="pincode">
+      <mat-header-cell *matHeaderCellDef> Pincode </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.address.zipcode}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="company name">
+      <mat-header-cell *matHeaderCellDef> Company Name </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.company.name}} </mat-cell>
+    </ng-container>
+  
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+
+  </mat-table>
+</div>

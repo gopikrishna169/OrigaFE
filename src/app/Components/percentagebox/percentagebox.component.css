@@ -1,0 +1,12 @@
+.percentage-box {
+    border-style: double;
+    border-color: black;
+    height: 100%;
+}
+
+.percentage-box-text {
+    text-align: center;
+    font-size: 3em;
+    top: 35%;
+    position: relative;
+}

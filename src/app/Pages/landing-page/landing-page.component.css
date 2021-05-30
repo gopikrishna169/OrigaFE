@@ -1,0 +1,14 @@
+.parent{
+    display: flex; 
+    padding: 5%;
+}
+
+.chart{
+    width: 60%; 
+    height: 40vh
+}
+
+.percentagebox{
+    width: 40%; 
+    height: 40vh;
+}
